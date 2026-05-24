@@ -7,7 +7,7 @@ const produtos = [
         categoria: "",
         descricao: "Ideal no dia a dia na cidade com economia e eficiência.",
         preco: 12990.90,
-        imagem: "./src/assets/img/Moto 1.jpg"
+        imagem: "./src/assets/img/voltcity.png"
     },
     
     {
@@ -16,7 +16,7 @@ const produtos = [
         categoria: "",
         descricao: "Mais potência e velocidade para quem busca adrenalina.",
         preco: 18990.00,
-        imagem: "./src/assets/img/Moto 1.jpg"
+        imagem: "./src/assets/img/voltsport.png"
     },
     
     {
@@ -25,7 +25,7 @@ const produtos = [
         categoria: "",
         descricao: "Aventure-se em qualquer terreno com liberdade.",
         preco: 21900.00,
-        imagem: "./src/assets/img/Moto 1.jpg"
+        imagem: "./src/assets/img/volttrail.png"
     },
     
     {
@@ -34,7 +34,7 @@ const produtos = [
         categoria: "",
         descricao: "Perfomace màxima com design arrojado.",
         preco: 28000.00,
-        imagem: "./src/assets/img/Moto 1.jpg"
+        imagem: "./src/assets/img/voltracer.png"
     },
     
     {
@@ -43,7 +43,7 @@ const produtos = [
         categoria: "",
         descricao: "Perfeita para trabalho e entregas urbanas.",
         preco: 16000.00,
-        imagem: "./src/assets/img/Moto 1.jpg"
+        imagem: "./src/assets/img/volt cargo.png"
     },
 ];
 
