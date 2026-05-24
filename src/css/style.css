@@ -673,3 +673,96 @@ footer {
     line-height: 1.4;
 }
 
+/* =========================
+   CARRINHO
+========================= */
+
+.carrinho {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 80px auto;
+
+    padding: 40px;
+
+    background: #0a0a0a;
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(255,255,255,.05);
+}
+
+.carrinho h1 {
+    font-size: 3rem;
+
+    margin-bottom: 40px;
+
+    color: white;
+}
+
+.lista-carrinho {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    background: rgba(255,255,255,.03);
+}
+
+.item-carrinho h3 {
+    color: white;
+}
+
+.item-carrinho p {
+    color: var(--verde-neon);
+
+    font-weight: bold;
+}
+
+.resumo {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resumo h2 {
+    color: white;
+}
+
+#total-compra {
+    color: var(--verde-neon);
+}
+
+#btn-desconto {
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--verde-neon);
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#btn-desconto:hover {
+    transform: scale(1.05);
+}
