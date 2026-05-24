@@ -674,79 +674,172 @@ footer {
 }
 
 /* =========================
-   CARRINHO
+   MAIN CARRINHO
 ========================= */
 
-.carrinho {
+.main-carrinho {
     width: 100%;
-    max-width: 900px;
+    max-width: 1500px;
 
-    margin: 80px auto;
-
-    padding: 40px;
-
-    background: #0a0a0a;
-
-    border-radius: 24px;
-
-    border: 1px solid rgba(255,255,255,.05);
+    margin: 0 auto;
 }
 
-.carrinho h1 {
-    font-size: 3rem;
+/* TOPO */
+
+.topo-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     margin-bottom: 40px;
+}
+
+.mini-texto {
+    color: var(--verde-neon);
+
+    font-size: .9rem;
+    font-weight: 700;
+
+    letter-spacing: .12em;
+
+    margin-bottom: 10px;
+}
+
+.quantidade-itens {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 22px;
+
+    background: rgba(255,255,255,.03);
+
+    border: 1px solid rgba(255,255,255,.05);
+
+    border-radius: 999px;
 
     color: white;
 }
 
-.lista-carrinho {
+.quantidade-itens i {
+    color: var(--verde-neon);
+
+    font-size: 1.2rem;
+}
+
+/* LISTA */
+
+.lista-produtos {
     display: flex;
     flex-direction: column;
-
     gap: 20px;
 }
 
+/* ITEM */
+
 .item-carrinho {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
 
     padding: 25px;
 
-    border-radius: 18px;
+    background: linear-gradient(
+        180deg,
+        rgba(20,20,20,1),
+        rgba(10,10,10,1)
+    );
 
-    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.05);
+
+    border-radius: 24px;
+
+    transition: .3s;
 }
 
-.item-carrinho h3 {
+.item-carrinho:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(57,255,20,.35);
+
+    box-shadow:
+        0 0 30px rgba(57,255,20,.08);
+}
+
+/* IMAGEM */
+
+.item-img {
+    width: 150px;
+    height: 110px;
+
+    object-fit: contain;
+}
+
+/* INFO */
+
+.item-info {
+    flex: 1;
+}
+
+.item-nome {
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
     color: white;
+
+    margin-bottom: 10px;
 }
 
-.item-carrinho p {
-    color: var(--verde-neon);
+.item-qtd {
+    color: #9f9f9f;
+}
+
+/* PREÇO */
+
+.item-preco {
+    font-size: 1.5rem;
 
     font-weight: bold;
-}
 
-.resumo {
-    margin-top: 40px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.resumo h2 {
-    color: white;
-}
-
-#total-compra {
     color: var(--verde-neon);
 }
 
-#btn-desconto {
-    padding: 14px 24px;
+/* CUPOM */
+
+.cupom-box {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.cupom-box input {
+    flex: 1;
+
+    height: 52px;
+
+    background: #111;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 12px;
+
+    padding: 0 16px;
+
+    color: white;
+
+    outline: none;
+}
+
+.cupom-box input:focus {
+    border-color: var(--verde-neon);
+}
+
+.cupom-box button {
+    width: 120px;
 
     border: none;
 
@@ -759,10 +852,211 @@ footer {
     font-weight: bold;
 
     cursor: pointer;
+}
+
+/* VERDE */
+
+.verde {
+    color: var(--verde-neon);
+}
+
+/* =========================
+   NOTIFICAÇÃO
+========================= */
+
+.notificacao {
+    position: fixed;
+
+    top: 30px;
+    right: -400px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 18px 24px;
+
+    background: #111;
+
+    border: 1px solid rgba(57,255,20,.3);
+
+    border-radius: 16px;
+
+    color: white;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 0 25px rgba(57,255,20,.15);
+
+    transition: .4s ease;
+}
+
+/* QUANDO APARECE */
+
+.notificacao.mostrar {
+    right: 30px;
+}
+
+/* ÍCONE */
+
+.notificacao i {
+    font-size: 1.5rem;
+
+    color: var(--verde-neon);
+}
+
+/* TEXTO */
+
+.notificacao span {
+    font-size: .95rem;
+
+    font-weight: 500;
+}
+
+/* =========================
+   BOTÃO DESCONTO
+========================= */
+
+.btn-desconto {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: var(--verde-neon);
+
+    color: black;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
 
     transition: .3s;
 }
 
-#btn-desconto:hover {
-    transform: scale(1.05);
+.btn-desconto:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(57,255,20,.25);
+}
+
+/* =========================
+   BOTÃO FINALIZAR
+========================= */
+
+.btn-finalizar {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+    border: 1px solid var(--verde-neon);
+
+    background: transparent;
+
+    color: var(--verde-neon);
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-finalizar:hover {
+    background: var(--verde-neon);
+
+    color: black;
+
+    box-shadow:
+        0 0 20px rgba(57,255,20,.2);
+}
+
+/* =========================
+   BOTÃO REMOVER
+========================= */
+
+.btn-remover {
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ff3b3b;
+
+    background: transparent;
+
+    color: #ff3b3b;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.btn-remover:hover {
+    background: #ff3b3b;
+
+    color: white;
+}
+
+/* =========================
+   CARRINHO NAVBAR
+========================= */
+
+.cart a {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: 500;
+
+    transition: .3s;
+}
+
+.cart a:hover {
+    color: var(--verde-neon);
+}
+
+.cart i {
+    font-size: 1.4rem;
+}
+
+/* CONTADOR */
+
+#contador-carrinho {
+    min-width: 24px;
+    height: 24px;
+
+    padding: 0 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--verde-neon);
+
+    color: black;
+
+    border-radius: 999px;
+
+    font-size: .75rem;
+    font-weight: 700;
 }
