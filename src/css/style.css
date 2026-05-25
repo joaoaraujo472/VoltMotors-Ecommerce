@@ -742,9 +742,11 @@ footer {
     align-items: center;
     justify-content: space-between;
 
-    gap: 25px;
+    gap: 40px;
 
-    padding: 25px;
+    padding: 32px;
+
+    margin-bottom: 10px;
 
     background: linear-gradient(
         180deg,
@@ -754,7 +756,7 @@ footer {
 
     border: 1px solid rgba(255,255,255,.05);
 
-    border-radius: 24px;
+    border-radius: 28px;
 
     transition: .3s;
 }
@@ -762,12 +764,11 @@ footer {
 .item-carrinho:hover {
     transform: translateY(-4px);
 
-    border-color: rgba(57,255,20,.35);
+    border-color: rgba(57,255,20,.3);
 
     box-shadow:
-        0 0 30px rgba(57,255,20,.08);
+        0 0 25px rgba(57,255,20,.08);
 }
-
 /* IMAGEM */
 
 .item-img {
